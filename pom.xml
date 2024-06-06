@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>fr.mathieu</groupId>
-    <artifactId>FrontEnd</artifactId>
+    <artifactId>association</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>rueduterroir</name>
     <description>rueduterroir</description>
