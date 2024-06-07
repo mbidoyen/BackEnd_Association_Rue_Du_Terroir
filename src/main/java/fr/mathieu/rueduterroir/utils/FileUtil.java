@@ -13,7 +13,7 @@ import java.nio.file.StandardCopyOption;
 @Slf4j
 public class FileUtil {
 
-    public static boolean saveFile(String uploadDir, String fileName, byte[] imageData) {
+    public static boolean uploadFile(String uploadDir, String fileName, byte[] imageData) {
         Path uploadPath = Paths.get(uploadDir);
         if (!Files.exists(uploadPath)) {
             try {

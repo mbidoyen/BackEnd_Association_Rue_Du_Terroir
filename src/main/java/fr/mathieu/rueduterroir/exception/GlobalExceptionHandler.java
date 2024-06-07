@@ -1,4 +1,4 @@
-package fr.mathieu.rueduterroir.controller.exception;
+package fr.mathieu.rueduterroir.exception;
 
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.ConstraintViolationException;

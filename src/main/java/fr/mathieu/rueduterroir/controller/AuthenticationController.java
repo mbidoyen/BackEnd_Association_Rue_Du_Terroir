@@ -1,7 +1,7 @@
 package fr.mathieu.rueduterroir.controller;
 
-import fr.mathieu.rueduterroir.model.dto.authentication.AuthenticateResponseDTO;
-import fr.mathieu.rueduterroir.model.dto.authentication.LoginDTO;
+import fr.mathieu.rueduterroir.dto.authentication.AuthenticateResponseDTO;
+import fr.mathieu.rueduterroir.dto.authentication.LoginDTO;
 import fr.mathieu.rueduterroir.security.token.service.IJwtService;
 import fr.mathieu.rueduterroir.utils.LoggerUtil;
 import jakarta.validation.Valid;
@@ -34,8 +34,7 @@ public class AuthenticationController {
     }
 
     @PostMapping("/signin")
-    public ResponseEntity<AuthenticateResponseDTO> signup(@Valid @RequestBody LoginDTO loginDTO, BindingResult bindingResult) {
-        log.error(loginDTO.toString());
+    public ResponseEntity<AuthenticateResponseDTO> signin(@Valid @RequestBody LoginDTO loginDTO, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             throw new ValidationException((Throwable) bindingResult);
         }

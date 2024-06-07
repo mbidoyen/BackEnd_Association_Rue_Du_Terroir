@@ -1,6 +1,6 @@
 package fr.mathieu.rueduterroir.model.mapper;
 
-import fr.mathieu.rueduterroir.model.dto.tenant.TenantSubscription;
+import fr.mathieu.rueduterroir.dto.tenant.TenantSubscription;
 import fr.mathieu.rueduterroir.model.entity.Tenant;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;

@@ -1,4 +1,4 @@
-package fr.mathieu.rueduterroir.model.dto.image_file;
+package fr.mathieu.rueduterroir.dto.image_file;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 @ToString
-public class RegistrationImageUploadDTO {
+public class ImageUploadDTO {
 
     @JsonProperty("data")
     private byte[] data;

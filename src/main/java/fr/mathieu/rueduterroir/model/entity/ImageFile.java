@@ -36,7 +36,7 @@ public class ImageFile {
     private Date updatedAt;
 
     @Column(name = "fle_is_archived", nullable = false)
-    private Boolean isArchived;
+    private Boolean isArchived = false;
 
     @OneToOne
     @JoinColumn(name = "tnt_uuid", nullable = false)

@@ -1,4 +1,4 @@
-package fr.mathieu.rueduterroir.model.dto.authentication;
+package fr.mathieu.rueduterroir.dto.authentication;
 
 import lombok.*;
 

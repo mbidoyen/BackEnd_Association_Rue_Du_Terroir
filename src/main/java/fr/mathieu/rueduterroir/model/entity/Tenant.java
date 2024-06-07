@@ -63,7 +63,7 @@ public class Tenant {
     private Date updatedAt;
 
     @Column(name = "TNT_IS_ARCHIVED", nullable = false)
-    private Boolean isArchived;
+    private Boolean isArchived = false;
 
     @Column(name = "TNT_IS_ENABLED", nullable = false)
     private Boolean isEnabled;

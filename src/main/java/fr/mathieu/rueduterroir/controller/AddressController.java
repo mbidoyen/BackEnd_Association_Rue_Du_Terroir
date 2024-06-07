@@ -1,6 +1,6 @@
 package fr.mathieu.rueduterroir.controller;
 
-import fr.mathieu.rueduterroir.model.dto.address.AddressDTO;
+import fr.mathieu.rueduterroir.dto.address.AddressDTO;
 import fr.mathieu.rueduterroir.model.entity.Address;
 import fr.mathieu.rueduterroir.model.mapper.AddressMapper;
 import fr.mathieu.rueduterroir.service.IAddressService;

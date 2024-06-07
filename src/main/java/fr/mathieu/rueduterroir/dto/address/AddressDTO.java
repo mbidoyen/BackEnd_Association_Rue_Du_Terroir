@@ -1,4 +1,4 @@
-package fr.mathieu.rueduterroir.model.dto.address;
+package fr.mathieu.rueduterroir.dto.address;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

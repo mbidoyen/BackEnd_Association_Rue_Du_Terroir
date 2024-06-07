@@ -1,9 +1,10 @@
-package fr.mathieu.rueduterroir.model.dto.tenant;
+package fr.mathieu.rueduterroir.dto.tenant;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import fr.mathieu.rueduterroir.model.dto.image_file.RegistrationImageUploadDTO;
+import fr.mathieu.rueduterroir.dto.image_file.ImageUploadDTO;
 import jakarta.validation.constraints.*;
 import lombok.*;
+import org.hibernate.validator.constraints.Length;
 
 @Getter
 @Setter
@@ -51,17 +52,21 @@ public class TenantSubscription {
     private String phone;
 
     @JsonProperty("garage_number")
+    @Min(value = 1, message = "The garage number is invalid")
     private Integer garage;
 
     @NotNull(message = "Tenant number is required.")
     @NotBlank(message = "Tenant number is required.")
+    @Length(min = 10, max = 10, message = "The tenant number must contain 10 characters")
     @JsonProperty("tenant_number")
     private String tenantNumber;
 
     @NotNull(message = "The address has not been selected")
     @JsonProperty("address_id")
+    @Min(value = 1, message = "This address is unknown")
+    @Max(value = 252, message = "This address is unknown")
     private Integer addressId;
 
     @JsonProperty("profil_picture")
-    private RegistrationImageUploadDTO imageFileDto;
+    private ImageUploadDTO imageFileDto;
 }
